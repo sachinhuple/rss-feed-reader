@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static %}
+{% load staticfiles %}
+<html>
+    <head>
+    	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+		<link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="{% static 'css/base.css' %}">
+        <title>Rss Feeds</title>
+        <style>
+
+
+        </style>
+    </head>
+    <body>
+	    <div class="page-header" style="background-color:orange;">
+	        <h1 style="text-align:center;"><a href="/">Ignite Solutions Rss Feeds</a></h1>
+	    </div>
+	    <div class="content container-fluid" style="margin: 0 auto;">
+	        <div class="row">
+	            <div class="col-md-12" style="text-align:left;">
+	            {% block content %}
+	            {% endblock %}
+	            </div>
+	        </div>
+	    </div>
+	</body>
+</html>

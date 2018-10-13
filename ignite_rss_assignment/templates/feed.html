@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+
+	{% for obj in feed_data %}
+
+<h3><b>Published</b> : <td>{{obj.published}}</td></h3>
+<h3><b>Title</b> : <td>{{obj.title}}</td></h3>
+<h3><b>Summary</b> : <td>{{obj.summary}}</td></h3>
+        {% for img_url in  obj.media %}
+            <img src={{img_url.url}} height = "300", width ="500">
+        {% endfor %}
+        </br>
+
+	{% endfor %}
+
+{% endblock %}
